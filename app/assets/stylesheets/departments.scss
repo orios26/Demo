@@ -1,0 +1,13 @@
+// Place all the styles related to the Departments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table,td.bordered{
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.list_line_odd{
+  background-color: #adbcce;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,900,200'
+rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="top">
+      <h1>HR Application</h1>
+      </div>
+      <div class="bottom">
+        <%= link_to 'Manager', managers_path, :class => "menlink" %>
+        <%= link_to 'Department', departments_path, :class => "menlink" %>
+        <%= link_to 'Employee', employees_path, :class => "menlink" %>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
